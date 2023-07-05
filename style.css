@@ -175,13 +175,15 @@ main {
   height: 65px;
 }
 .card-git-button {
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
   border-radius: 60px;
-  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  /* box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059); */
   background-color: #000;
   color: white;
   font-size: 65px;
+
   display: flex;
   justify-self: center;
   align-items: center;
@@ -192,6 +194,7 @@ main {
   background-color: #ffb811;
 }
 .card-dribble-button {
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
   border-radius: 60px;
@@ -208,25 +211,9 @@ main {
 .card-dribble-button:hover {
   background-color: #ea4c89;
 }
-.card-behance-button {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  border-radius: 60px;
-  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
-  background-color: #000;
-  color: white;
-  font-size: 65px;
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-.card-behance-button:hover {
-  background-color: white;
-  color: #000;
-}
+
 .card-linkedin-button {
+  border: none;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
   border-radius: 10px;
@@ -296,7 +283,7 @@ main {
   background-color: #fff;
   border-radius: 50px;
   color: #000;
-  font-size: 30px;
+  font-size: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,4 +292,5 @@ main {
 }
 .card-cc .card-head .logo:hover {
   box-shadow: 0 0 40px white;
+  transform: rotate(-90deg) scale(1.1);
 }
