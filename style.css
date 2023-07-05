@@ -1,0 +1,308 @@
+* {
+ 
+  font-family: "Open Sauce One", sans-serif;
+  font-family: "Open Sauce Two", sans-serif;
+  font-family: "Open Sauce Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  position: static;
+  overflow-y: scroll;
+  background-color: #ecf0f1;
+}
+main {
+  height: 200vh;
+}
+.nav-belt {
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-belt .nav-belt-left {
+  display: flex;
+}
+.nav-belt .nav-belt-left .bar-1 span {
+  margin: 4px 20px;
+  display: inline-block;
+  background-color: black;
+  opacity: 0.2;
+  width: 100px;
+  height: 2.5px;
+  border-radius: 100px;
+}
+.nav-belt .nav-belt-left .nav-brand {
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-belt .nav-belt-left .bar-2 span {
+  margin: 4px 20px;
+  display: inline-block;
+  background-color: black;
+  opacity: 0.2;
+  border-radius: 100px;
+  width: 500px;
+  height: 2.5px;
+}
+.nav-belt-right {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-belt-right li {
+  margin: 0 20px;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.nav-belt-right li::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background-color: #000;
+  position: absolute;
+  left: 47%;
+  bottom: -8px;
+  transition: all 0.25s ease;
+  opacity: 0;
+}
+.nav-belt-right li:hover::after {
+  opacity: 1;
+}
+.nav-belt-right li:hover,
+.nav-belt-right li:active {
+  opacity: 1;
+}
+.row-1 {
+  margin: 70px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.row-1 .card-title {
+
+  width: 900px;
+  height: 500px;
+  border-radius: 62px;
+  background-image: url("./assets/defaultcardHover5eef4f09572179.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 17px 20px 40px #00000055;
+}
+.row-1 .card-gxuri {
+  width: 457px;
+  height: 500px;
+  border-radius: 62px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 17px 20px 40px #00000055;
+}
+.row-1 .card-gxuri img {
+  position: relative;
+  top: -100px;
+  height: 1400px;
+  width: 1400px;
+  object-fit: cover;
+  transition: all 0.55s ease;
+}
+.row-1 .card-gxuri img:hover {
+  transform: scale(1.1);
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+.card-title-name {
+  text-align: center;
+  margin-top: 50px;
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.card-title-title {
+  margin-top: 15px;
+  color: #000;
+  font-size: 75px;
+  line-height: 98%;
+  font-weight: 900;
+}
+.card-title-desc {
+  margin-top: 15px;
+  color: #000;
+  font-size: 20.3333px;
+  line-height: 200%;
+  font-weight: 300;
+}
+.card-buttons {
+  margin-top: 20px;
+  display: flex;
+}
+.card-buttons button {
+  margin: 0 10px;
+}
+.card-title-button {
+  border-radius: 60px;
+  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px;
+  width: 270px;
+  height: 65px;
+}
+.card-git-button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  border-radius: 60px;
+  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  background-color: #000;
+  color: white;
+  font-size: 65px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card-git-button:hover {
+  background-color: #ffb811;
+}
+.card-dribble-button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  border-radius: 60px;
+  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  background-color: #000;
+  color: white;
+  font-size: 65px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card-dribble-button:hover {
+  background-color: #ea4c89;
+}
+.card-behance-button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  border-radius: 60px;
+  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  background-color: #000;
+  color: white;
+  font-size: 65px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card-behance-button:hover {
+  background-color: white;
+  color: #000;
+}
+.card-linkedin-button {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
+  background-color: #fff;
+  color: #000;
+  font-size: 65px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.card-linkedin-button:hover {
+  background-color: #fff;
+  color: #0077b5;
+}
+.row-2 {
+  margin-top: 15px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+}
+.card-cc {
+  width: 480px;
+  height: 650px;
+  border-radius: 62px;
+  background: #000;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 17px 20px 40px #00000055;
+  overflow: hidden;
+  position: relative;
+}
+.card-cc .bg {
+  width: 500.2996px;
+  height: 500.3021px;
+  position: absolute;
+  background-image: url("./assets/bg-cc.png");
+  left: -9px;
+  top: 162px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.7s ease;
+}
+.card-cc .bg:hover {
+  transform: scale(1.1);
+}
+.card-cc .card-head {
+  display: flex;
+  margin: 40px;
+}
+.card-cc .card-head h3 {
+  font-size: 30px;
+}
+.card-cc .card-head p {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.card-cc .card-head .logo {
+  width: 69px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #000;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+.card-cc .card-head .logo:hover {
+  box-shadow: 0 0 40px white;
+}
