@@ -16,3 +16,4 @@ const sr = ScrollReveal({
 sr.reveal('.card-title',{delay : 200 , origin : 'top'});
 sr.reveal('.card-gxuri',{delay : 450 , origin : 'top'});
 sr.reveal('.card-cc',{delay : 950 , origin : 'left'});
+sr.reveal('.nav-belt',{delay : 950 , origin : 'right'});
