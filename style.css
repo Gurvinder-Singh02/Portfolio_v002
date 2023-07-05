@@ -1,5 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
 * {
- 
   font-family: "Open Sauce One", sans-serif;
   font-family: "Open Sauce Two", sans-serif;
   font-family: "Open Sauce Sans", sans-serif;
@@ -7,63 +7,65 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
-body{
+
+body {
   position: static;
   overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #ecf0f1;
 }
-main {
-  height: 200vh;
-}
 .nav-belt {
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-bottom: 70px;
-  margin-top: 32px;
+  position: relative;
+  top: 15px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .nav-belt .nav-belt-left {
   display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 60%;
 }
-.nav-belt .nav-belt-left .bar-1 span {
-  margin: 4px 20px;
+.nav-belt .nav-belt-left .bar-1 {
   display: inline-block;
   background-color: black;
   opacity: 0.2;
-  width: 100px;
-  height: 2.5px;
+  height: 1.5px;
   border-radius: 100px;
+  flex-grow: 1;
 }
 .nav-belt .nav-belt-left .nav-brand {
   font-size: 20px;
   line-height: 100%;
+  margin: 0 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.nav-belt .nav-belt-left .bar-2 span {
-  margin: 4px 20px;
+.nav-belt .nav-belt-left .bar-2 {
   display: inline-block;
   background-color: black;
   opacity: 0.2;
   border-radius: 100px;
-  width: 500px;
-  height: 2.5px;
+  flex-grow: 7;
+  height: 1.5px;
 }
 .nav-belt-right {
   display: flex;
-  font-size: 20px;
-  font-weight: bold;
+  width: 40%;
 }
 .nav-belt-right li {
-  margin: 0 20px;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
   opacity: 0.2;
   transition: all 0.3s ease;
   position: relative;
 }
-.nav-belt-right li::after {
+/* .nav-belt-right li::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -81,18 +83,27 @@ main {
 .nav-belt-right li:hover,
 .nav-belt-right li:active {
   opacity: 1;
+} */
+
+#menu-icon {
+  font-size: 30px;
+  color: white;
+  z-index: 101;
+  cursor: pointer;
+  display: none;
 }
+
 .row-1 {
   margin: 70px;
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
   gap: 10px;
 }
 .row-1 .card-title {
-
-  width: 900px;
+  width: 60%;
   height: 500px;
   border-radius: 62px;
   background-image: url("./assets/defaultcardHover5eef4f09572179.jpeg");
@@ -102,7 +113,7 @@ main {
   box-shadow: 17px 20px 40px #00000055;
 }
 .row-1 .card-gxuri {
-  width: 457px;
+  width: 40%;
   height: 500px;
   border-radius: 62px;
   overflow: hidden;
@@ -130,12 +141,13 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 0 50px;
+  font-size: 100px;
 }
 .card-title-name {
   text-align: center;
   margin-top: 50px;
   color: #000;
-  font-size: 23px;
+  font-size: .23em;
   font-weight: bold;
   width: min-content;
   height: min-content;
@@ -145,14 +157,14 @@ main {
 .card-title-title {
   margin-top: 15px;
   color: #000;
-  font-size: 75px;
+  font-size: 65px;
   line-height: 98%;
   font-weight: 900;
 }
 .card-title-desc {
   margin-top: 15px;
   color: #000;
-  font-size: 20.3333px;
+  font-size: .20em;
   line-height: 200%;
   font-weight: 300;
 }
@@ -168,7 +180,7 @@ main {
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #000;
   color: white;
-  font-size: 20px;
+  font-size: .20em;
   font-weight: bold;
   padding: 18px;
   width: 270px;
@@ -182,7 +194,7 @@ main {
   /* box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059); */
   background-color: #000;
   color: white;
-  font-size: 65px;
+  font-size: .65em;
 
   display: flex;
   justify-self: center;
@@ -201,7 +213,7 @@ main {
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #000;
   color: white;
-  font-size: 65px;
+  font-size: .65em;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -220,7 +232,7 @@ main {
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #fff;
   color: #000;
-  font-size: 65px;
+  font-size: .65em;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -294,3 +306,45 @@ main {
   box-shadow: 0 0 40px white;
   transform: rotate(-90deg) scale(1.1);
 }
+
+@media (max-width: 990px) {
+
+  .row-1{
+    flex-wrap: wrap;
+  }
+  .row-1 .card-title,.row-1 .card-gxuri { 
+    width: 100%;
+  }
+  .card-title-title {
+    font-size: 50px;
+  }
+  #menu-icon {
+    display: block;
+    color: #000;
+  }
+  .nav-belt-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: #4d9559;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+  }
+
+  .nav-belt-right li {
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+  }
+
+  .nav-belt-right.open {
+    right: 0;
+  }
+}
+
