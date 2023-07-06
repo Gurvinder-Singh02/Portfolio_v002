@@ -10,7 +10,9 @@
 }
 .P3{
     background-image: url("./Gxuri_resources/final/2WAR.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #2a1325;
     background-position: center;
 }
 .P4{
@@ -40,7 +42,9 @@
 }
 .P9{
     background-image: url("./Gxuri_resources/final/green\ car.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
     background-position: center;
 }
 .P10{
@@ -68,6 +72,7 @@
 .P14{
     background-image: url("./Gxuri_resources/final/IMG-20230706-WA0006.jpg");
     background-size: cover;
+   
     background-position: center;
 }
 .P15{
@@ -102,7 +107,9 @@
 }
 .P21{
     background-image: url("./Gxuri_resources/final/IMG-20230706-WA0015.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #d5cfcd;
     background-position: center;
 }
 .P22{

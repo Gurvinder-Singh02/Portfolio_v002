@@ -458,17 +458,8 @@ body {
   transform: translate(0); /* Add this line */
 }
 
-.item-col:active {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-  margin: -50px -30px;
-  box-shadow: 17px 20px 40px #000000;
-  transform: translate(20px);
-}
-
 .container {
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .row-bottom {
@@ -493,13 +484,4 @@ body {
   height: 50vh;
   transition: all 0.5s ease;
   box-shadow: 17px 20px 40px #00000055;
-}
-
-.item-r:active {
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-  margin: -50px -30px;
-  box-shadow: 17px 20px 40px #000000;
-  transform: translate(20px);
 }
