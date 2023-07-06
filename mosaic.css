@@ -22,7 +22,9 @@
 }
 .P5{
     background-image: url("./Gxuri_resources/final/car.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
     background-position: center;
 }
 .P6{

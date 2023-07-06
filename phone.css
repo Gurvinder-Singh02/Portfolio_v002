@@ -167,8 +167,70 @@
 
   .row-2 {
     display: flex;
+    flex-direction: column;
     margin: 10px;
   }
+  
+.card-pp {
+  width: 100%;
+  height: 350px;
+  border-radius: 62px;
+  background: #fff;
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 17px 20px 40px #00000055;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-pp .bg {
+  width: 340.2996px;
+  height: 340.3021px;
+  position: absolute;
+  background-image: url("./assets/Education.png ");
+  right: 10px;
+  top: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.7s ease;
+}
+.card-pp .bg:hover {
+  transform: scale(1.1);
+}
+.card-pp .card-head {
+  display: flex;
+  margin: 40px;
+}
+.card-pp .card-head h3 {
+  font-size: 30px;
+}
+.card-pp .card-head p {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.card-pp .card-head .logo {
+  width: 60px;
+  margin-left: 20px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50px;
+  color: #000;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+}
+
+.card-pp .card-head .logo:hover {
+  box-shadow: 0 0 40px white;
+  transform: rotate(-90deg) scale(1.1);
+}
+
   .card-cc {
     width: 100%;
     height: 650px;
