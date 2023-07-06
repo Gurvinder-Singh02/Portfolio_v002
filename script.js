@@ -9,11 +9,43 @@
 const sr = ScrollReveal({
     distance : '65px',
     duration : 2600,
-    delay : 450,
+    delay : 250,
     reset : true
 });
 
-sr.reveal('.card-title',{delay : 200 , origin : 'left'});
-sr.reveal('.card-gxuri',{delay : 450 , origin : 'right'});
-sr.reveal('.card-cc',{delay : 950 , origin : 'bottom'});
-sr.reveal('.nav-belt',{delay : 950 , origin : 'top'});
+sr.reveal('.card-title',{delay : 150 , origin : 'left'});
+sr.reveal('.card-gxuri',{delay : 150 , origin : 'right'});
+sr.reveal('.card-cc',{delay : 150 , origin : 'bottom'});
+sr.reveal('.nav-belt',{delay : 150 , origin : 'top'});
+
+ScrollReveal().reveal('.item-col');
+ScrollReveal().reveal('.item-r');
+
+
+// // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 1250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+//   setTimeout(() => {
+//     const box = document.getElementById('box');
+  
+//     // 👇️ removes element from DOM
+//     box.style.opacity = 0;
+
+//     // 👇️ hides element (still takes up space on page)
+//     // box.style.visibility = 'hidden';
+//   }, 1000);

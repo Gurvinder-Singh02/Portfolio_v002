@@ -1,3 +1,26 @@
+/* #main-content {
+  visibility: hidden;
+  display: none;
+  transition: all .5s ease;
+} */
+/* .starter-container{
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transition: all .5s ease;
+  opacity: 1;
+}
+.ml3 {
+  color: white;
+  font-weight: 900;
+  font-size: 3.5em;
+} */
+
 @import url("https://fonts.cdnfonts.com/css/open-sauce-one");
 * {
   font-family: "Open Sauce One", sans-serif;
@@ -33,7 +56,7 @@ body {
 .nav-belt .nav-belt-left .bar-1 {
   display: inline-block;
   background-color: black;
-  opacity: 0.2;
+  opacity: 0;
   height: 1.5px;
   border-radius: 100px;
   flex-grow: 1;
@@ -147,7 +170,7 @@ body {
   text-align: center;
   margin-top: 50px;
   color: #000;
-  font-size: .23em;
+  font-size: 0.23em;
   font-weight: bold;
   width: min-content;
   height: min-content;
@@ -164,13 +187,17 @@ body {
 .card-title-desc {
   margin-top: 15px;
   color: #000;
-  font-size: .20em;
+  font-size: 0.2em;
   line-height: 200%;
   font-weight: 300;
 }
 .card-buttons {
   margin-top: 20px;
   display: flex;
+  margin-top: 11px;
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
 }
 .card-buttons button {
   margin: 0 10px;
@@ -179,12 +206,22 @@ body {
   border-radius: 60px;
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #000;
-  color: white;
-  font-size: .20em;
   font-weight: bold;
   padding: 18px;
   width: 270px;
   height: 65px;
+  transition: all 0.55s ease;
+  font-size: 0.2em;
+}
+
+.card-title-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-title-button:hover {
+  box-shadow: 0 0 90px 1px orange;
+  transform: scale(1.05);
 }
 .card-git-button {
   border: none;
@@ -194,7 +231,7 @@ body {
   /* box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059); */
   background-color: #000;
   color: white;
-  font-size: .65em;
+  font-size: 0.65em;
 
   display: flex;
   justify-self: center;
@@ -205,23 +242,27 @@ body {
 .card-git-button:hover {
   background-color: #ffb811;
 }
-.card-dribble-button {
+.card-mail-button {
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
-  border-radius: 60px;
+  border-radius: 20px;
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #000;
   color: white;
-  font-size: .65em;
+  font-size: 0.65em;
   display: flex;
   justify-self: center;
   align-items: center;
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.card-dribble-button:hover {
-  background-color: #ea4c89;
+.card-mail-button:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(111, 233, 253, 1) 0%,
+    rgba(89, 121, 255, 1) 100%
+  );
 }
 
 .card-linkedin-button {
@@ -232,7 +273,7 @@ body {
   box-shadow: 17px 15px 40px 0px rgba(0, 0, 0, 0.2117647059);
   background-color: #fff;
   color: #000;
-  font-size: .65em;
+  font-size: 0.65em;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -244,14 +285,26 @@ body {
   color: #0077b5;
 }
 .row-2 {
-  margin-top: 15px;
-  margin-left: 70px;
-  margin-bottom: 70px;
+  margin: 70px;
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.card-pp {
+  width: 60%;
+  height: 650px;
+  border-radius: 62px;
+  background: #000;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 17px 20px 40px #00000055;
+  overflow: hidden;
+  position: relative;
 }
 .card-cc {
-  width: 480px;
+  width: 40%;
   height: 650px;
   border-radius: 62px;
   background: #000;
@@ -290,7 +343,8 @@ body {
   opacity: 0.5;
 }
 .card-cc .card-head .logo {
-  width: 69px;
+  width: 60px;
+  margin-left: 20px;
   height: 60px;
   background-color: #fff;
   border-radius: 50px;
@@ -302,17 +356,18 @@ body {
   transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
+
 .card-cc .card-head .logo:hover {
   box-shadow: 0 0 40px white;
   transform: rotate(-90deg) scale(1.1);
 }
 
 @media (max-width: 990px) {
-
-  .row-1{
+  .row-1 {
     flex-wrap: wrap;
   }
-  .row-1 .card-title,.row-1 .card-gxuri { 
+  .row-1 .card-title,
+  .row-1 .card-gxuri {
     width: 100%;
   }
   .card-title-title {
@@ -322,25 +377,36 @@ body {
     display: block;
     color: #000;
   }
+
+  .nav-belt {
+    /* position: fixed;
+    z-index: 1;
+    background-color: white; */
+    justify-content: center;
+    margin-bottom: 30px;
+  }
   .nav-belt-right {
     display: none;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: -100%;
     width: 300px;
     height: 40vh;
     background: #4d9559;
-    /* display: flex; */
+     display: flex; 
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;
-    transition: all 0.55s ease;
+    transition: all 0.55s ease; */
   }
 
-  .nav-belt-right li {
-    margin-left: 0;
-    display: block;
-    margin: 7px 0;
+  .nav-belt-left .bar-1 {
+    display: none;
+  }
+
+  .nav-belt-left {
+    flex-grow: 1;
+    margin-right: 50px;
   }
 
   .nav-belt-right.open {
@@ -348,3 +414,92 @@ body {
   }
 }
 
+.container {
+  display: flex;
+  /* background-color: gray; */
+  justify-content: space-between;
+  /* height: 100vw; */
+  margin: 70px;
+  gap: 10px;
+  transition: all 0.5s ease;
+}
+.flex-row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+}
+.flex-row2 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+}
+
+.item-row {
+  display: flex;
+  flex-direction: column;
+  /* background-color: hotpink; */
+  height: 200vw;
+  width: 50%;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.item-col {
+  border-radius: 40px;
+  background-color: greenyellow;
+  height: 50%;
+  display: inline-block;
+  justify-content: space-between;
+  box-shadow: 17px 20px 40px #00000055;
+  transition: all 0.5s ease;
+  position: relative;
+  transform: translate(0); /* Add this line */
+}
+
+.item-col:active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  margin: -50px -30px;
+  box-shadow: 17px 20px 40px #000000;
+  transform: translate(20px);
+}
+
+.container {
+  margin-top: -50px;
+}
+
+.row-bottom {
+  width: 100%;
+  display: flex;
+  display: flex;
+  /* background-color: gray; */
+  justify-content: space-between;
+  /* height: 100vw; */
+  margin: 70px;
+  gap: 10px;
+  transition: all 0.5s ease;
+}
+
+.item-col-below {
+  width: 50vw;
+}
+
+.item-r {
+  border-radius: 35px;
+  width: 100%;
+  height: 50vh;
+  transition: all 0.5s ease;
+  box-shadow: 17px 20px 40px #00000055;
+}
+
+.item-r:active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  margin: -50px -30px;
+  box-shadow: 17px 20px 40px #000000;
+  transform: translate(20px);
+}
