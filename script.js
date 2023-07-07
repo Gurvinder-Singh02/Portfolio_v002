@@ -19,9 +19,9 @@ sr.reveal('.card-cc',{delay : 150 , origin : 'bottom'});
 sr.reveal('.card-pp',{delay : 150 , origin : 'top'});
 sr.reveal('.nav-belt',{delay : 150 , origin : 'top'});
 sr.reveal('.project-line',{delay : 150 , origin : 'left'});
+sr.reveal('.Animate-col',{delay : 150 , origin : 'bottom'});
+sr.reveal('.Animate-col2',{delay : 150 , origin : 'top'});
 
-ScrollReveal().reveal('.item-col');
-ScrollReveal().reveal('.item-r');
 
 
 // // Wrap every letter in a span
