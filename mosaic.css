@@ -17,7 +17,9 @@
 }
 .P4{
     background-image: url("./Gxuri_resources/final/Alternate\ roots\ logo\ v1_final\ psd.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
     background-position: center;
 }
 .P5{
@@ -61,7 +63,9 @@
 }
 .P12{
     background-image: url("./Gxuri_resources/final/Happy\ New\ year.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #22293a;
     background-position: center;
 }
 
