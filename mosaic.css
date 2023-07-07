@@ -138,6 +138,7 @@
 .P25{
     background-image: url("./Gxuri_resources/final/Sierra\ Blue\ Suneha\ Gurbani\ TV\ Version\ 1.jpg");
     background-size: contain;   
+    background-color: black;
     background-repeat: no-repeat;
     background-color: white;
     background-position: center;
@@ -145,6 +146,7 @@
 .P26{
     background-image: url("./Gxuri_resources/final/WAR.jpg");
     background-size: contain;   
+    background-color: black;
     background-repeat: no-repeat;
     background-color: white;
     background-position: center;
@@ -152,6 +154,7 @@
 .P27{
     background-image: url("./Gxuri_resources/final/WAR3.jpg");
     background-size: contain;   
+    background-color: black;
     background-repeat: no-repeat;
     background-color: white;
     background-position: center;
@@ -159,6 +162,7 @@
 .P28{
     background-image: url("./Gxuri_resources/final/WAR4.jpg");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -167,6 +171,7 @@
 .P29{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -174,6 +179,7 @@
 .P30{
     background-image: url("./Gxuri_resources/final2/Suneha\ Tv\ Logo\ 3.jpg");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color:#06484f ; 
     background-position: center;
@@ -190,6 +196,7 @@
 
 .P32{
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -197,6 +204,7 @@
 .P33{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -204,6 +212,7 @@
 .P34{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -211,6 +220,7 @@
 .P35{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
+    background-color: black;
     background-repeat: no-repeat;
     background-color: black; 
     background-position: center;
@@ -223,3 +233,60 @@
     box-shadow: 0px 0px 400px #fff;
 
 } */
+
+.vid1{
+    background-image: url("./Gxuri_resources/final2/VID-20230706-WA0002.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid2{
+    background-image: url("./Gxuri_resources/final2/VID-20230706-WA0004.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid3{
+    background-image: url("./Gxuri_resources/final2//VID-20230706-WA0005.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid4{
+    background-image: url("./Gxuri_resources/final2/VID-20230706-WA0006.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid5{
+    background-image: url("./Gxuri_resources/final2/VID-20230706-WA0003.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid6{
+    background-image: url("./Gxuri_resources/final2/pGTLhQZQ4vWjNQs682tGPp4yK1Ti7upB-MsPlXmhTlo=_plaintext_638242323014551064.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid7{
+    background-image: url("./Gxuri_resources/final2/slumber party.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vid8{
+    background-image: url("./Gxuri_resources/final2/VID-20230706-WA0008.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}

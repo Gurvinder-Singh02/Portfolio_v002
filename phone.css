@@ -185,6 +185,10 @@
   position: relative;
 }
 
+video{
+  opacity: 0;
+}
+
 .card-pp .bg {
   width: 340.2996px;
   height: 340.3021px;
