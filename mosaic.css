@@ -290,3 +290,42 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.vid9{
+    background-image: url("./Gxuri_resources/final3/Comp\ 1.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}.vid10{
+    background-image: url("./Gxuri_resources/final3/MAIN\ RENDER\ THIS\ 1920X1080.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}.vid11{
+    background-image: url("./Gxuri_resources/final3/SixtyNine.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}.vid12{
+    background-image: url("./Gxuri_resources/final3/SixtyNine2.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}.vid13{
+    background-image: url("./Gxuri_resources/final3/SixtyNine2.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}.vid14{
+    background-image: url("./Gxuri_resources/final3/SixtyNine_1.mp4");
+    background-size: contain;  
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
