@@ -160,9 +160,61 @@
     background-position: center;
 }
 
+.P29{
+    background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
+.P30{
+    background-image: url("./Gxuri_resources/final2/Suneha\ Tv\ Logo\ 3.jpg");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color:#06484f ; 
+    background-position: center;
+}
+
+.P31{
+    background-image: url("./Gxuri_resources/final/Floral\ pink\ Suneha\ TV\ Version\ 1.jpg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
+
+
+.P32{
+    background-image: url("./Gxuri_resources/final2/slumber\ party.mp4");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
+.P33{
+    background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
+.P34{
+    background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
+.P35{
+    background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-color: black; 
+    background-position: center;
+}
 /* .item-col{
     transition: all .5s ease;
-
+    
 }
 .item-col:hover{
     box-shadow: 0px 0px 400px #fff;

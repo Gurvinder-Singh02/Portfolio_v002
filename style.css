@@ -31,6 +31,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,12 +82,18 @@ body {
   width: 40%;
 }
 .nav-belt-right li {
-  margin-left: 60px;
+  color: #000;
+  margin-left: 40px;
   font-size: 15px;
   font-weight: 600;
   opacity: 0.2;
   transition: all 0.3s ease;
   position: relative;
+  padding: 8px 10px;
+}
+
+.project-line{
+  top: -28px;
 }
 /* .nav-belt-right li::after {
   content: "";
@@ -96,17 +103,26 @@ body {
   background-color: #000;
   position: absolute;
   left: 47%;
-  bottom: -8px;
+  bottom: -10px;
   transition: all 0.25s ease;
   opacity: 0;
 }
 .nav-belt-right li:hover::after {
   opacity: 1;
-}
-.nav-belt-right li:hover,
-.nav-belt-right li:active {
-  opacity: 1;
+  
 } */
+.nav-belt-right li:hover:nth-child(2n+1) {
+  opacity: 1;
+ background-color: white;
+ box-shadow: 0 0  40px #c1d9cf ;
+ border-radius: 20px;
+}
+.nav-belt-right li:hover{
+  opacity: 1;
+ background-color: white;
+ box-shadow: 0 0  40px #f5dba0 ;
+ border-radius: 20px;
+}
 
 #menu-icon {
   font-size: 30px;
@@ -297,19 +313,21 @@ body {
   border-radius: 62px;
   background: #fff;
   color: black;
+  background-image: url("./assets/Education.png ");
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   box-shadow: 17px 20px 40px #00000055;
   overflow: hidden;
   position: relative;
+
 }
 
 .card-pp .bg {
   width: 800.2996px;
   height: 800.3021px;
   position: absolute;
-  background-image: url("./assets/Education.png ");
+  /* background-image: url("./assets/Education.png "); */
   right: 10px;
   top: 16px;
   background-position: center;
@@ -414,6 +432,16 @@ body {
   .row-1 {
     flex-wrap: wrap;
   }
+  .row-2{
+    flex-direction: column;
+  }
+  .row-2 .card-cc{
+    width: 100%;
+  }
+
+  .row-2 .card-pp{
+    width: 100%;
+  }
   .row-1 .card-title,
   .row-1 .card-gxuri {
     width: 100%;
@@ -504,6 +532,7 @@ body {
   transition: all 0.5s ease;
   position: relative;
   transform: translate(0); /* Add this line */
+  overflow: hidden;
 }
 
 .container {
