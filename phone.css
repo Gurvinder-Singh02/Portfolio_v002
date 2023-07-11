@@ -215,7 +215,7 @@ video{
   font-size: 18px;
   opacity: 0.5;
 }
-.card-pp .card-head .logo {
+ .logo {
   width: 60px;
   margin-left: 20px;
   height: 60px;
@@ -230,7 +230,7 @@ video{
   transition: all 0.5s ease;
 }
 
-.card-pp .card-head .logo:hover {
+ .logo:hover {
   box-shadow: 0 0 40px white;
   transform: rotate(-90deg) scale(1.1);
 }

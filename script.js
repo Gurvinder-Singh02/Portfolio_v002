@@ -5,6 +5,22 @@
 //     menu.classList.toggle('bx-x');
 //     navlist.classList.toggle('open');
 // }
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Freelancer";
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Graphic Desinger";
+    }, 4000);
+    setTimeout(() => {
+        text.textContent = "Web developer";
+    }, 8000); //1s = 1000 milliseconds
+}
+
+textLoad();
+setInterval(textLoad, 12000);
 
 const sr = ScrollReveal({
     distance : '65px',

@@ -201,6 +201,12 @@
     background-color: black; 
     background-position: center;
 }
+.P50{
+    background-size: contain;  
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .P33{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
