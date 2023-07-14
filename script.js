@@ -37,6 +37,8 @@ sr.reveal('.nav-belt',{delay : 150 , origin : 'top'});
 sr.reveal('.project-line',{delay : 150 , origin : 'left'});
 sr.reveal('.Animate-col',{delay : 150 , origin : 'bottom'});
 sr.reveal('.Animate-col2',{delay : 150 , origin : 'top'});
+sr.reveal('.Animate-col4',{delay : 150 , origin : 'left'});
+sr.reveal('.Animate-col5',{delay : 150 , origin : 'right'});
 
 
 
