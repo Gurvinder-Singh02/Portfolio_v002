@@ -203,10 +203,29 @@
 }
 .P50{
     background-size: contain;  
+    background-color: #3f3f3f;
+    color: white !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.P50 img{
+    transition: all .5s none;
+    /* transform: scale(1.2); */
+}
+.P51{
+    background-size: contain;  
     background-color: white;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.P51 img{
+    transition: all .5s none;
+    transform: scale(1.2);
+}
+
+
 .P33{
     background-image: url("./Gxuri_resources/final2/PB\ Live\ TV\ LOGO.png");
     background-size: contain;  
